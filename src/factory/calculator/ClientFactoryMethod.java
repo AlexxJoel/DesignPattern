@@ -8,7 +8,7 @@ public class ClientFactoryMethod {
     public static void main(String[] args) {
 
         //data for calculator with arraylist filled with numbers
-        ArrayList<Integer> numbers = new ArrayList<Integer>(Arrays.asList(2, 2, 3, 4, 5, 6, 7, 8, 9,10));
+        ArrayList<Integer> numbers = new ArrayList<>(Arrays.asList(2, 2, 3, 4, 5, 6, 7, 8, 9, 10));
         System.out.println("numbers = " + numbers + " size = " + numbers.size());
 
         // create calculator for media

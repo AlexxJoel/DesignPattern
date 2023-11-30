@@ -12,7 +12,7 @@ public class OperationMediana implements Operation {
     @Override
     public void calculate() {
         System.out.println("Calculating media...");
-        float result = 0f;
+        float result = 0;
         // sort the array with quicksort
         //convert the arraylist to array
         int[] numbersArray = new int[this.numbers.size()];
@@ -29,7 +29,7 @@ public class OperationMediana implements Operation {
             int middle1 = numbersArray[middle];
             int middle2 = numbersArray[middle - 1];
             //calculate the average
-            result = (middle1 + middle2) / 2;
+            result = (float) (middle1 + middle2) / 2;
         } else {
             //get the middle number
             result = numbersArray[middle + 1];

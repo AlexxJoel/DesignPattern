@@ -1,7 +1,6 @@
 package factory.calculator;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class OperationModa implements Operation {
     private ArrayList<Integer> numbers;
