@@ -1,15 +1,15 @@
 package strategy.encriptation;
 
-public class StrategyClient {
+public class ClientStrategy {
 
     public static void main(String[] args) {
 
         String originalText = "Vamos, ya casi termina el cuatri";
 
         //Definimos la primera estrategia.
-        estragiaEncriptar strategy = new estrategiaCesar();
+        IEncryptionStrategy strategy = new CesarStrategy();
         //Para crear el contexto se requiere una estrategia inicial.
-        contextoEstrategia context = new contextoEstrategia(strategy);
+        ContextStrategy context = new ContextStrategy(strategy);
 
         //Encriptamos y desencriptamos el texto a través del contexto, quien pasará la solicitud a la estrategia.
         byte[] encrypted = context.encriptarTexto(originalText);
@@ -19,7 +19,7 @@ public class StrategyClient {
         System.out.println("Estrategia Cesar: " + decrypted);
 
         //Ahora probemos la segunda estrategia y pasemosla al contexto.
-        strategy = new estrategiaAES();
+        strategy = new AESStrategy();
         context.setEstrategia(strategy);
 
         encrypted = context.encriptarTexto(originalText);

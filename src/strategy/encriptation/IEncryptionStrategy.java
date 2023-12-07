@@ -1,6 +1,6 @@
 package strategy.encriptation;
 
-interface encryptionStrategy {
+interface IEncryptionStrategy {
 
     byte[] encriptar(String text);
 

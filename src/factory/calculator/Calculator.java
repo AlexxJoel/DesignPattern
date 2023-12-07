@@ -18,6 +18,9 @@ abstract class Calculator {
      and they have responsibility to create the operation.
      */
 
+
+
+
     abstract Operation createOperation();
 
     public void initialize() {

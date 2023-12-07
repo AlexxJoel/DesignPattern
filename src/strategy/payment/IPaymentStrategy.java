@@ -1,2 +1,6 @@
-package strategy.payment;public interface IPaymentStrategy {
+package strategy.payment;
+
+interface IPaymentStrategy {
+    boolean initialization();
+    void methodPayment(int total);
 }
